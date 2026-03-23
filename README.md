@@ -1,16 +1,65 @@
-# React + Vite
+# 🛒 Cart Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React-based Cart Management Application** that allows users to browse products, add them to a cart, manage quantities, and view total pricing — built with clean UI and scalable architecture.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🛍️ Browse products by category
+* ➕ Add items to cart
+* 🔁 Increase / decrease item quantity
+* ❌ Remove items from cart
+* 🧮 Dynamic total price calculation
+* 🧭 Smooth category navigation (scroll-based)
+* 🔢 Cart badge showing total items
+* 💻 Responsive and clean UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Concepts Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React Functional Components
+* React Hooks (`useState`)
+* React Router (`Routes`, `Route`, `Link`)
+* State Management (Lifting State Up)
+* Array Methods (`map`, `filter`, `reduce`, `find`)
+* Conditional Rendering
+* CSS (Flexbox, Grid, Responsive Design)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+ ├── assets/
+ │    └── product.json
+ ├── components/
+ │    └── NavBar.jsx
+ ├── pages/
+ │    ├── Home.jsx
+ │    └── Cart.jsx
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+```
+
+---
+
+## 🌐 Live Demo
+
+👉 https://cart-management-bice.vercel.app/
+
+---
+
+## 🧩 How It Works
+
+1. Products are loaded from a JSON file
+2. Users can add products to the cart
+3. If product already exists → quantity increases
+4. Cart state is managed in `App.jsx`
+5. Data is passed to components via props
+6. Total price is calculated dynamically
+
+---
